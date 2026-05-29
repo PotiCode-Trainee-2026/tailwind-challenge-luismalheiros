@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -9,46 +9,255 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
-  <body class="bg-gray-100">
-    <nav class="bg-gray-100 flex h-15 justify-center items-center gap-10 fixed top-0 left-0 w-full backdrop-blur-md">
-      <a href="index.html"><img src="src/assets/logo.png" alt="" class="h-20 w-20 flex items-center mt-3"></a>
-      <a href="" class="text-gray-600 hover:text-black transition duration-400 m-7 ">Como funciona</a>
-      <a href="" class="text-gray-600 hover:text-black transition duration-400 m-7">Recursos</a>
-      <a href="" class="text-gray-600 hover:text-black transition duration-400 m-7">Planos</a>
-      <button class="bg-black rounded-4xl text-white w-30">Comecar</button>
+
+  <body class="bg-gray-100 ">
+
+    <nav class="fixed top-0 w-full bg-gray-100/70 backdrop-blur-md border-b border-gray-200 h-15 flex justify-evenly items-center ">
+      <a href="agenda"><img src="src/assets/logo.png" alt="" class="h-20 w-20 flex items-center mt-3"></a>
+      <a href="#funcionalidades" class="text-gray-600 hidden md:flex gap-4 hover:text-black transition duration-400 m-7 border border-gray-100 rounded-2xl w-30 text-center hover:border-gray-600">Como funciona</a>
+      <a href="#integracoes" class="text-gray-600 hidden md:flex gap-4 hover:text-black transition duration-400 m-7 border border-gray-100 rounded-2xl w-30 text-center hover:border-gray-600">Integrações</a>
+      <a href="#recursos" class="text-gray-600 hidden md:flex gap-4 hover:text-black transition duration-400 m-7 border border-gray-100 rounded-2xl w-20 text-center hover:border-gray-600">Beneficios</a>
+      <a href="#planos" class="text-gray-600 hidden md:flex gap-4 hover:text-black transition duration-400 m-7 border border-gray-100 rounded-2xl w-20 text-center hover:border-gray-600">Planos</a>
+      <button class="bg-black rounded-4xl  text-white w-30"><a href="#funcionalidades">Começar</a></button>
     </nav>
 
     <div class="mt-30 flex flex-col justify-center items-center">
       <div class="rounded-3xl bg-blue-100 border border-gray-500 w-60 text-center">
-        <p class="text-blue-900">Agendamento inteligente</p>   
+        <p class="text-blue-900" id="agenda">Agendamento inteligente</p>   
       </div>
-        <h1 class="text-6xl mt-10 font-bold">Seu calendario,</h1>
-        <h1 class="text-6xl mt-1 text-blue-900 font-bold">em portugues comum.</h1>
-        <div class="w-150 mt-4">
+        <h1 class="text-4xl md:text-6xl mt-10 font-bold">Seu calendario,</h1>
+        <h1 class="text-4xl md:text-6xl mt-1 text-blue-900 font-bold">em portugues comum.</h1>
+        <div class="w-auto max-w-lg mt-4 px-4">
           <p class="text-center text-lg">Digite seus planos como uma pessoa. O OpenCalender cuida da lógica, dos fusos e dos conflitos na hora. Sem clicar em grades de horários.</p>
-        </div>
-        <div class="bg-white w-200 h-100 mt-10 flex justify-center rounded-2xl">
-          <div class="bg-gray-100 w-170 h-10 rounded-2xl mt-10 flex items-center">
-          <p class="ml-3 text-gray-500 text-center">"Reuniao da empresa proximo sabado das 6 da noite ate as 7" <span class="bg-blue-900 text-white rounded-2xl text-center ml-15">Processando...</span></p>
+      </div>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+      <div class="bg-white w-full max-w-2xl flex flex-col items-center rounded-2xl mt-10 px-4 py-6">
+          <div class="bg-gray-100 w-full h-10 rounded-2xl mt-10 flex items-center">
+          <p class="flex items-center w-full text-gray-500">"Reuniao da empresa proximo sabado das 6 da noite ate as 7" <span class="bg-blue-900 text-white rounded-2xl text-center ml-auto mr-5">Processando...</span></p>
           </div>
-        </div>
-    </div>
+          <div class="text-center mt-7 bg-gray-100 rounded-2xl border border-gray-300">
+            <p class="text-2xs">NOVO EVENTO!</p>
+            <p class="font-bold">Reunião da empresa</p>
+            <p>30/06, 19:00</p>
+          </div>
+          <div class="mt-10">
+            <h2 class="text-xl text-blue-900 font-bold"> > Começo rápido</h2>
+            <img src="src/assets/image.png" alt="">
+          </div>
+      </div>
+      </div>
+
+    <h2 class="text-4xl md:text-6xl font-bold mt-15 text-blue-900 text-center" id="funcionalidades">> Como OpenCalender funciona</h2>
     <div class="flex justify-center items-center">
-    <div class="grid grid-cols-3 gap-4 mt-20 items-center justify-center border border-black-50 w-200">
-      <div class="bg-white rounded-2xl text-center">
-        <h1 class="font-bold">Linguagem Natural</h1>
-        <p class="mt-10">Apenas digite "academia toda segunda às 18h" ou "remarcar almoço para sexta". Entendemos a intenção, não só palavras-chave.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-20 items-center justify-center w-200">
+        <div class="bg-white rounded-2xl text-center h-50 border-2 border-white hover:border-blue-100 hover:-translate-y-1 transition flex flex-col items-center">
+        <h1 class="font-bold text-blue-900 text-4xl">1.</h1>
+        <h1 class="font-bold text-black text-2xl">Rotina ou digite</h1>
+        <p class="mt-1">Uma frase, do jeito que pensa. Digite. Mande. Marcado. Assim como o OpenClaw, ele se integra com outros apps, aprende sua rotina e marca por você!</p>
       </div>
-      <div class="bg-white rounded-2xl text-center">
+
+      <div class="bg-white rounded-2xl text-center h-50 border-2 border-white hover:border-blue-100 hover:-translate-y-1 transition flex flex-col items-center">
+        <h1 class="font-bold text-blue-900 text-4xl">2.</h1>
+        <h1 class="font-bold text-black text-2xl">A IA interpreta</h1>
+        <p class="mt-1">Em cerca de 20 segundos o OpenCalender usa a tecnologia mais recente do Opus 4.7 e visualização de IAs da Nvidia. Ele interpreta e adiciona</p>
+      </div>
+
+      <div class="bg-white rounded-2xl text-center h-50 border-2 border-white hover:border-blue-100 hover:-translate-y-1 transition flex flex-col items-center">
+        <h1 class="font-bold text-blue-900 text-4xl">3.</h1>
+        <h1 class="font-bold text-black text-2xl">Sua escolha</h1>
+        <p class="mt-1">o OpenCalender é compativel com diversas ferramentas. Entre elas o Google Calender,Calendarios de IOS e Android e até Whatsapp</p>
+      </div>
+      </div>
+    </div>
+
+
+    <h2 class="text-4xl md:text-6xl font-bold mt-15 text-blue-900 text-center" id="recursos">> Beneficios</h2>
+  <div class="flex justify-center items-center">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-20 items-center justify-center w-200">
+
+      <div class="bg-white rounded-2xl text-center h-50 border-2 border-white hover:border-blue-100 hover:-translate-y-1 transition flex flex-col items-center">
+        <h1 class="font-bold">Roda na sua máquina</h1>
+        <img src="src/assets/casa.png" alt="">
+        <p class="mt-1">MacOS, Windows ou Linux. O OpenCalender é integrado com IAs da NVIDA - Tudo privado, seus dados são todos seus.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl text-center h-50 border-2 border-white hover:border-blue-100 hover:-translate-y-1 transition flex flex-col items-center">
+        <h1 class="font-bold">Chat inteligente</h1>
+        <img src="src/assets/chat.png" alt="">
+        <p class="mt-1">Ao rodar no chat /lembrete, a IA automaticamente manda no seu Whatsapp a mensagem de lembrete - nunca mais esqueca</p>
+      </div>
+
+      <div class="bg-white rounded-2xl text-center h-50 border-2 border-white hover:border-blue-100 hover:-translate-y-1 transition flex flex-col items-center">
+        <h1 class="font-bold">Memoria persistente</h1>
+        <img src="src/assets/brain.png" alt="" class="flex items-center justify-center">  
+        <p class="mt-1">Lembra de você, da sua rotina e aprende cada vez mais para melhorar os lembretes e as marcações no Google Calender</p>
+      </div>
+
+      <div class="bg-white rounded-2xl text-center h-50 border-2 border-white hover:border-blue-100 hover:-translate-y-1 transition flex flex-col items-center">
+        <h1 class="font-bold">Domínio de fusos</h1>
+        <img src="src/assets/fuso.png" alt="">
+        <p class="mt-1">Reunião com o time de Tóquio às 9h horário deles" vira automaticamente seu horário local — sem você levantar um dedo.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl text-center h-50 border-2 border-white hover:border-blue-100 hover:-translate-y-1 transition flex flex-col items-center">
         <h1 class="font-bold">Resolução de conflitos</h1>
-        <p class="mt-10">Se um evento se sobrepõe, o Chronos sugere o próximo melhor horário com base nas suas preferências e hábitos.</p>
+        <img src="src/assets/conflito.png" alt="">
+        <p class="mt-1">Se um evento se sobrepõe, o OpenCalender sugere o próximo melhor horário com base nas suas preferências e hábitos.</p>
       </div>
-      <div class="bg-white rounded-2xl text-center">
-        <h1 class="font-bold">Linguagem Natural</h1>
-        <p class="mt-10">Apenas digite "academia toda segunda às 18h" ou "remarcar almoço para sexta". Entendemos a intenção, não só palavras-chave.</p>
+
+      <div class="bg-white rounded-2xl text-center h-50 border-2 border-white hover:border-blue-100 hover:-translate-y-1 transition flex flex-col items-center">
+        <h1 class="font-bold">Linguagem natural</h1>
+        <img src="src/assets/pessoa.png" alt="">
+        <p class="mt-1">Reunião com o time de Tóquio às 9h horário deles" vira automaticamente seu horário local — sem você levantar um dedo.</p>
       </div>
     </div>
   </div>
+  
+    <h2 class="text-4xl md:text-6xl mt-15 font-bol text-blue-900 text-center " id="integracoes">> Integrações</h2>
+    <div class="flex justify-center items-center ">
+    <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 mt-10 font-bold">
+      <div class="border border-blue-300 w-25 text-center rounded-2xl h-10 flex items-center justify-center gap-1 hover:border-blue-600 transition cursor-pointer">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="#25D366" class="" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+        <p>Whatsapp</p>
+      </div>
+
+      <div class="border border-blue-300 w-25 text-center rounded-2xl h-10 flex items-center justify-center gap-1 hover:border-blue-600 transition cursor-pointer">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="#26A5E4" class="" xmlns="http://www.w3.org/2000/svg"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"></path></svg>
+        <p>Telegram</p>
+      </div>
+
+      <div class="border border-blue-300 w-25 text-center rounded-2xl h-10 flex items-center justify-center gap-1 hover:border-blue-600 transition cursor-pointer">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="#5865F2" class="" xmlns="http://www.w3.org/2000/svg"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"></path></svg>
+        <p>Discord</p>
+      </div>
+
+      <div class="border border-blue-300 w-25 text-center rounded-2xl h-10 flex items-center justify-center gap-1 hover:border-blue-600 transition cursor-pointer">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="#7C3AED" class="" xmlns="http://www.w3.org/2000/svg"><path d="M19.355 18.538a68.967 68.959 0 0 0 1.858-2.954.81.81 0 0 0-.062-.9c-.516-.685-1.504-2.075-2.042-3.362-.553-1.321-.636-3.375-.64-4.377a1.707 1.707 0 0 0-.358-1.05l-3.198-4.064a3.744 3.744 0 0 1-.076.543c-.106.503-.307 1.004-.536 1.5-.134.29-.29.6-.446.914l-.31.626c-.516 1.068-.997 2.227-1.132 3.59-.124 1.26.046 2.73.815 4.481.128.011.257.025.386.044a6.363 6.363 0 0 1 3.326 1.505c.916.79 1.744 1.922 2.415 3.5zM8.199 22.569c.073.012.146.02.22.02.78.024 2.095.092 3.16.29.87.16 2.593.64 4.01 1.055 1.083.316 2.198-.548 2.355-1.664.114-.814.33-1.735.725-2.58l-.01.005c-.67-1.87-1.522-3.078-2.416-3.849a5.295 5.295 0 0 0-2.778-1.257c-1.54-.216-2.952.19-3.84.45.532 2.218.368 4.829-1.425 7.531zM5.533 9.938c-.023.1-.056.197-.098.29L2.82 16.059a1.602 1.602 0 0 0 .313 1.772l4.116 4.24c2.103-3.101 1.796-6.02.836-8.3-.728-1.73-1.832-3.081-2.55-3.831zM9.32 14.01c.615-.183 1.606-.465 2.745-.534-.683-1.725-.848-3.233-.716-4.577.154-1.552.7-2.847 1.235-3.95.113-.235.223-.454.328-.664.149-.297.288-.577.419-.86.217-.47.379-.885.46-1.27.08-.38.08-.72-.014-1.043-.095-.325-.297-.675-.68-1.06a1.6 1.6 0 0 0-1.475.36l-4.95 4.452a1.602 1.602 0 0 0-.513.952l-.427 2.83c.672.59 2.328 2.316 3.335 4.711.09.21.175.43.253.653z"></path></svg>
+        <p>Obsidian</p>
+      </div>
+
+      <div class="border border-blue-300 w-25 text-center rounded-2xl h-10 flex items-center justify-center gap-1 hover:border-blue-600 transition cursor-pointer">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="#EA4335" class="" xmlns="http://www.w3.org/2000/svg"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"></path></svg>
+        <p>Gmail</p>
+      </div>
+
+      <div class="border border-blue-300 w-25 text-center rounded-2xl h-10 flex items-center justify-center gap-1 hover:border-blue-600 transition cursor-pointer">
+      <img width="20" class="ml-1" alt="Google Calendar icon (2020)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/250px-Google_Calendar_icon_%282020%29.svg.png">
+      <p class="text-sm">Google Calender</p>
+      </div>
+
+      <div class="border border-blue-300 w-25 text-center rounded-2xl h-10 flex items-center justify-center gap-1 hover:border-blue-600 transition cursor-pointer">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="#007AFF" class="" xmlns="http://www.w3.org/2000/svg"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"></path></svg>
+      <p>iMessage</p>
+      </div>
+
+      <div class="border border-blue-300 w-25 text-center rounded-2xl h-10 flex items-center justify-center gap-1 hover:border-blue-600 transition cursor-pointer">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="var(--text-primary)" class="" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
+      <p>Github</p>
+      </div>
+      
+    </div>
+  </div>
+      
+  <h2 class="text-4xl md:text-6xl font-bold mt-15 text-blue-900 text-center" id="planos">> Nossos planos</h2>
+  <div class="flex justify-center items-center">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-20 items-center justify-center w-250">
+      <div class="bg-white rounded-2xl h-120 border-2 border-white hover:border-blue-100 hover:-translate-y-1 transition flex flex-col items-center">
+        <img src="src/assets/free.png" alt="" class="h-12 w-12 mt-3">
+        <h1 class="font-bold mt-3 text-2xl">Free</h1>
+        <p class="mt-1">Teste o OpenCalender</p>
+        <p class="font-bold mt-2 text-2xl">0$</p>
+        <p class="text-gray-600">Grátis para todos</p>
+        <button class="bg-black text-white rounded-2xl w-50 mt-8 cursor-pointer">Teste o OpenCalender free</button>
+        <ul class="mt-5 mb-5 ml-3">
+          <li><p>✓ Use no IOS, Android e no seus computadores</p></li>
+          <li>✓ Crie e edite seus compromissos</li>
+          <li>✓ Memoria inteligente baseada nos chats</li>
+          <li>✓ Conexão com Google Calender</li>
+          <li>✓ 2 créditos por dia</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-2xl h-120 border-2 border-blue-100 hover:border-blue-200 hover:-translate-y-1 transition flex flex-col items-center">
+        <img src="src/assets/pro.png" alt="" class="h-12 w-12 mt-3">
+        <h1 class="font-bold mt-3 text-2xl">Pro</h1>
+        <p class="mt-1">Teste o OpenCalender</p>
+        <p class="font-bold mt-2 text-2xl">10$</p>
+        <p class="text-gray-600 font-bold">Inclue todos os beneficios do free</p>
+        <button class="bg-black text-white rounded-2xl w-50 mt-8 cursor-pointer">Teste o OpenCalender pro</button>
+        <ul class="mt-5 mb-5 ml-3">
+          <li><p>✓ Mais créditos diários</p></li>
+          <li>✓ Inclue uma CalenderOpen</li>
+          <li>✓ Marcações automaticas baseadas na rotina</li>
+          <li>✓ Conexão com Outlook, Whatsapp e telegram</li>
+          <li>✓ Acesso a pesquisas</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-2xl h-120 border-2 border-blue-200 hover:border-blue-300 hover:-translate-y-1 transition flex flex-col items-center">
+        <img src="src/assets/max.png" alt="" class="h-12 w-12 mt-3">
+        <h1 class="font-bold mt-3 text-2xl">Max</h1>
+        <p class="mt-1">Teste o OpenCalender</p>
+        <p class="font-bold mt-2 text-2xl">15$</p>
+        <p class="text-black font-bold">Inclue todos os beneficios do free e pro</p>
+        <button class="bg-black text-white rounded-2xl w-50 mt-8 cursor-pointer">Teste o OpenCalender max</button>
+        <ul class="mt-5 mb-5 ml-3">
+          <li><p>✓ 5 a 10 vezes mais entradas que o Pro</p></li>
+          <li>✓ Acesso a modelos exclusivos</li>
+          <li>✓ Prioridade e rapidez em alto trafégo</li>
+          <li>✓ Acesso antecipado a melhorias</li>
+        </ul>
+      </div>
+
+    </div>
+    
+  </div>
+
+  <h2 class="text-4xl md:text-6xl mt-10 font-bold text-blue-900 text-center">> Dê uma olhada...</h2>
+  <div class="flex justify-center items-center">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-20 items-center justify-center w-150">
+      <div class="bg-white rounded-2xl h-25 border-2 border-blue-100 hover:border-blue-200 hover:-translate-y-1 transition flex flex-col items-center text-center cursor-pointer">
+        <svg class="w-8 h-8" viewBox="0 0 24 24" fill="#0006b1" data-astro-cid-j7pv25f6=""> <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" data-astro-cid-j7pv25f6=""></path> </svg>
+        <p class="text-xl font-bold">Discord</p>
+        <p class="text-gray-600 text-xs">Entre na comunidade</p>
+      </div>
+      <div class="bg-white rounded-2xl h-25 border-2 border-blue-100 hover:border-blue-200 hover:-translate-y-1 transition flex flex-col items-center text-center cursor-pointer">
+        <svg class="cta-icon w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="#0006b1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-j7pv25f6=""> <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" data-astro-cid-j7pv25f6=""></path> <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" data-astro-cid-j7pv25f6=""></path> <line x1="8" y1="7" x2="16" y2="7" data-astro-cid-j7pv25f6=""></line> <line x1="8" y1="11" x2="14" y2="11" data-astro-cid-j7pv25f6=""></line> </svg>
+        <p class="text-xl font-bold ">Documentação</p>
+        <p class="text-gray-600 text-xs">Visualize a documentação</p>
+      </div>
+      <div class="bg-white rounded-2xl h-25 border-2 border-blue-100 hover:border-blue-200 hover:-translate-y-1 transition flex flex-col items-center text-center cursor-pointer">
+        <svg class="cta-icon w-8 h-8" viewBox="0 0 24 24" fill="#0006b1" data-astro-cid-j7pv25f6=""> <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" data-astro-cid-j7pv25f6=""></path> </svg>
+        <p class="text-xl font-bold ">Github</p>
+        <p class="text-gray-600 text-xs">Olhe o source code</p>
+      </div>
+
+      <div class="bg-white rounded-2xl h-25 border-2 border-blue-100 hover:border-blue-200 hover:-translate-y-1 transition flex flex-col items-center text-center cursor-pointer">
+        <svg class="cta-icon h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="#0006b1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-j7pv25f6=""> <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" data-astro-cid-j7pv25f6=""></polygon> </svg>
+        <p class="text-xl font-bold ">CalenderOpen</p>
+        <p class="text-gray-600 text-xs">Nossa ferramenta</p>
+      </div>
+
+    </div>
+  </div>
+
+
+    <footer class="h-auto px-4 py-4 text-center bg-blue-900 mt-50 flex items-center text-gray-200 flex-col md:text-sm w-full">
+      <p class="ml-10"><span class="font-bold">OpenCalender</span>: A IA que entende sua rotina e organiza sua agenda automaticamente</p>
+      <p class="ml-10">Feito por <span class="font-bold">Luis Eduardo Malheiros</span></p>
+    <div class="flex items-center gap-3 font-bold">
+      <ul class="flex gap-3">
+        <li><button><a href="mailto:luisedumalheiros@gmail.com">luisedumalheiros@gmail.com</a></button></li>
+        <li><button><a href="https://github.com/luismalheiros">Github</a></button></li>
+        <li><button><a href="linkedin.com">Linkedin</a></button></li>
+      </ul>
+      </div>
+      <p>© 2026 OpenCalender. Todos os direitos reservados.</p>
+    </footer>
+
+  
 
   </body>
   <script type="module" src="./src/main.js"></script>
